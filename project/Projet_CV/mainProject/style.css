@@ -1,0 +1,97 @@
+html{
+    background: grey;
+}
+body{
+    /* Je configure la taille du body */
+    background: inherit;
+    width: 800px;
+    margin: 0 auto;
+}
+header #conteneur1{
+    display: flex;
+    background: black;
+    align-items: center;
+    position: relative;
+}
+#barre_haut ul{
+    display: flex;
+}
+#barre_haut ul li{
+    list-style-type: none;
+    color: green;
+    margin-right: 15%;
+}
+header div form{
+    position: absolute;
+    right: 1%;
+    top: 25%;
+}
+header h1{
+    color: green;
+    text-align: center;
+}
+#conteneur2 div{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+#conteneur2 div:hover{
+    opacity: 0.5;
+}
+#conteneur2 div img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid green;
+    border-radius: 50%;
+}
+/* mise en forme de la partie section */
+section form{
+    color: green;
+    margin: 2% auto;
+    border: 1px solid black;
+    background: black;
+}
+section form #form_conteneur1{
+    display: flex;
+    justify-content: space-between;
+}
+section form div input{
+    color: green;
+    background: black;
+}
+#date{
+    color: green;
+    background: black;
+}
+#hate-h{
+    color: green;
+    background: black;
+}
+#body_count{
+    color: green;
+    background: black;
+}
+#parcour_choice{
+    color: green;
+    background: black;
+}
+section form #form_conteneur3{
+    margin: 0 auto;
+    width: 300px;
+    position: relative;
+}
+#titre_description{
+    position: absolute;
+    right: 29%;
+}
+#description{
+    color: green;
+    background: black;
+}
+#form_conteneur4{
+    margin: 0 auto;
+}
+footer p{
+    text-align: center;
+}

@@ -1,0 +1,230 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.firstSection{
+    border: 1px solid white;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/imageWorkGroup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.bgFirstSection{
+    border: 1px solid black;
+    width: 40%;
+    height: auto !important;
+    background-color: rgba(1, 1, 143, 0.589);
+    border: 1px solid rgba(1, 1, 143, 0.589);
+    box-sizing: border-box;
+    margin-right: 5%;
+}
+.paragrapheBgFirstSection{
+    border: 1px solid rgba(1, 1, 143, 0.048);
+    box-sizing: border-box;
+    padding: 10% 5%;
+}
+.paragrapheBgFirstSection h1, .paragrapheBgFirstSection h2{
+    color: white;
+}
+.paragrapheBgFirstSection h1{
+    line-height: 1.5;
+    padding-bottom: 5%;
+}
+.paragrapheBgFirstSection h2{
+    font-weight: lighter;
+}
+/* ----------deuxième Section--------- */
+.secondSection{
+    width: 100%;
+    /* height: auto; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.secondSection .imgConteinerSecondSection{
+    width: 50%;
+    /* height: 70vh; */
+}
+.secondSection .imgConteinerSecondSection img{
+    object-fit: contain;
+    width: 100%;
+    max-height: 70vh;
+}
+.paragrapheSecondSection{
+    border: 1px solid white;
+    box-sizing: border-box;
+    width: 49%;
+}
+.paragrapheSecondSection h1{
+    color: rgb(65, 65, 245);
+    text-align: center;
+}
+.paragrapheSecondSection p{
+    color: rgb(90, 88, 88);
+    text-align: center;
+}
+.paragrapheSecondSection button{
+    background-color: rgb(24, 20, 20);
+    padding: 10px;
+    border-radius: 20px;
+}
+.paragrapheSecondSection button a{
+    text-decoration: none;
+    color: white;
+}
+/* ------Bilan Comparé-------- */
+.bilanComparé{
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    width: 100%;
+    color: white;
+    background-color: rgb(1, 1, 104);
+    padding: 40px;
+}
+.bilanComparé h1{
+    text-align: center;
+}
+.conteinerBilanComparé{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.conteinerBilanComparé .leftHand{
+    width: 50%;
+}
+.conteinerBilanComparé .leftHand button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: grey;
+}
+.conteinerBilanComparé .leftHand button a{
+    color: white;
+    text-decoration: none;
+}
+hr{
+    width: 90%;
+    margin: 5% auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+/* ----------Dernière section---------- */
+.pk{
+    border: 1px solid white;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+.txtPk{
+    line-height: 3;
+}
+.pk h1{
+    color: burlywood;
+    font-size: 3rem;
+}
+.pk p span{
+    font-weight: bolder;
+}
+.notif {
+    border: 1px solid;
+    border-radius: 50%;
+    top: -15px;
+    right: -15px;
+    position: absolute; 
+    padding: 2px 6px;
+    font-size: 12px;
+}
+.iconcontainer {
+    position: relative;
+}
+.spBtn{
+    display: flex;
+    justify-content: center;
+}
+.spBtn a{
+    padding: 1%;
+    border: solid 1px black ;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0px 0px 5px 2px black;
+}
+@media (max-width: 900px) {
+    .firstSection{
+        height: 40vh;
+    }
+    .bgFirstSection{
+        height: 30vh;
+    }
+    .paragrapheBgFirstSection{
+        height: 100%;
+        border: 1px solid rgba(1, 1, 143, 0.048);
+        padding: 0;
+        padding-left: 2%;
+
+    }
+    .paragrapheBgFirstSection h1, .paragrapheBgFirstSection h2{
+        color: white;
+    }
+    .paragrapheBgFirstSection h1{
+        line-height: 1.5;
+        padding-bottom: 5%;
+        font-size: 100%;
+    }
+    .paragrapheBgFirstSection h2{
+        font-weight: lighter;
+        font-size: 100%;
+    }
+    .conteinerBilanComparé{
+        flex-direction: column;
+    }
+    .conteinerBilanComparé .leftHand, .conteinerBilanComparé .rightHand{
+        width: 100%;
+    }
+    .conteinerBilanComparé .rightHand img{
+        width: 60%;
+        margin: 0 20%;
+        margin-top: 3%;
+    }
+    .footerTop{
+        flex-direction: column;
+    }
+    .footerTop ul{
+        border-bottom: 1px dashed white;
+    }
+    .footerTop ul li{
+        display: flex;
+        justify-content: center;
+    }
+    .footerEnd{
+        display: flex;
+        justify-content: center;
+    }
+    .secondSection{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgConteinerSecondSection{
+        width: 100%;
+    }
+    .secondSection{
+        font-size: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+    .paragrapheSecondSection{
+        width: 100%;
+    }
+    .imgConteinerSecondSection{
+        width: 100%;
+        height: auto;
+    }
+}

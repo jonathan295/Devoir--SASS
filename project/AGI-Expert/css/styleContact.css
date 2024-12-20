@@ -1,0 +1,89 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sectionContact{
+    display: flex;
+    flex-direction: column;
+}
+.sectionContact h1{
+    font-size: 200%;
+}
+.firstConteinerSectionContact{
+    display: flex;
+}
+.leftHandSubContainerSectionContact{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    background-image: url(../img/mainStyloContact.jpg);
+    background-size: cover;
+    color: white;
+}
+.leftHandSubContainerSectionContactContent{
+    padding: 20%;
+    background-color: rgba(0, 0, 107, 0.534);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.leftHandSubContainerSectionContactContent ul{
+    list-style: none;
+    padding: 0;
+}
+.leftHandSubContainerSectionContactContent ul li{
+    display: flex;
+    align-items: center;
+}
+.leftHandSubContainerSectionContactContent ul li div{
+    padding-right: 10px;
+}
+
+.rightHandSubContainerSectionContact{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    padding:0 5%;
+}
+.rightHandSubContainerSectionContact form{
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 10%; */
+} 
+.rightHandSubContainerSectionContact form label, .rightHandSubContainerSectionContact form input{
+    margin: 0.5%;
+} 
+.rightHandSubContainerSectionContact form input{
+    height: 25px;
+    padding: 1%;
+
+}
+.rightHandSubContainerSectionContact form textarea{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.rightHandSubContainerSectionContact input[type="submit"]{
+    padding: 10px;
+    color: white;
+    background-color: blue;
+    border: none;
+}
+label span{
+    color: red;
+}
+.sectionMap{
+    width: 95%;
+    height: 70vh;
+    margin: 2% auto;
+}
+.sectionMap iframe{
+    width: 95%;
+    height: 400px;
+    margin: 2% 2%;
+}
+@media (max-width: 900px){
+   .firstConteinerSectionContact{
+    display: flex;
+    flex-direction: column;
+   }
+}

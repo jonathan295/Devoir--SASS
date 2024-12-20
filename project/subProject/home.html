@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleHome.css">
+    <link rel="stylesheet" href="Font-Awesome-6.x/Font-Awesome-6.x/css/all.css">
+    <link rel="stylesheet" href="footerStyle.css">
+    <link rel="stylesheet" href="nav.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+      <nav>
+        <div>
+            <span class="logo">Féru-Advice</span>
+        </div>
+        <ul class="navLinks">
+            <li><a href="home.html" id="is-active">Acceuil</a></li>
+            <li><a href="#">Sercice</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+        <form action="">
+            <input type="search" name="recherche" id="recherche" placeholder="Search...">
+            <label for="recherche"><i class="fa fa-search"></i></label>
+        </form>
+      </nav>
+      <div class="btnMenu">
+          <i class="fa fa-bars"></i>
+      </div>
+    </header>
+
+
+     <!-- Container for the image gallery -->
+    <div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <!-- <div class="numbertext">1 / 6</div> -->
+        <img src="img1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <!-- <div class="numbertext">2 / 6</div> -->
+        <img src="img2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <!-- <div class="numbertext">3 / 6</div> -->
+        <img src="img3.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <!-- <div class="numbertext">4 / 6</div> -->
+        <img src="img4.jpg" style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-angle-left"></i></a>
+    <a class="next" onclick="plusSlides(1)"><i class="fa fa-angle-right"></i></a>
+  
+    <!-- Image text -->
+    <div class="bgSpace">
+      <p>Master Piece</p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="img1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+    </div>
+  </div> 
+
+  <section class="firstSection">
+    <h1>Féru-Graff</h1>
+    <p>Je publie régulièrement mes nouvelles oeuvres sur ce site</p>
+    <p class="note">!! Attention ces images sont soumis à des droits d'auteurs veuiller vous assurer de les avoirs achetter avant de les utiliser !!</p>
+  </section>
+
+  <section class="card">
+    <div class="vignette">
+      <div class="imageConteiner">
+        <img src="vignette1.jpg" alt="vignette1">
+      </div>
+      <div class="textConteiner">
+        <h2>Description:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+    </div>
+    <div class="vignette">
+      <div class="imageConteiner">
+        <img src="vignette2.jpg" alt="vignette1">
+      </div>
+      <div class="textConteiner">
+        <h2>Description:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+    </div>
+    <div class="vignette">
+      <div class="imageConteiner">
+        <img src="vignette3.jpg" alt="vignette1">
+      </div>
+      <div class="textConteiner">
+        <h2>Description:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+    </div>
+  </section>
+  <section class="card">
+    <div class="vignette">
+      <div class="imageConteiner">
+        <img src="vignette4.jpg" alt="vignette1">
+      </div>
+      <div class="textConteiner">
+        <h2>Description:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+    </div>
+    <div class="vignette">
+      <div class="imageConteiner">
+        <img src="vignette6.jpg" alt="vignette1">
+      </div>
+      <div class="textConteiner">
+        <h2>Description:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+    </div>
+    <div class="vignette">
+      <div class="imageConteiner">
+        <img src="vignette5.jpg" alt="vignette1">
+      </div>
+      <div class="textConteiner">
+        <h2>Description:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="firstSection">
+    <h1>Cependant j'offre aussi divers autres services</h1>
+  </section>
+
+  <section class="card">
+    <div class="vignette1">
+      <div class="imageConteiner1">
+        <img src="tshirt1.jpg" alt="vignette1">
+      </div>
+      <div class="textConteiner">
+        <h2>Vente de T-Shirt personnalisé</h2>
+      </div>
+    </div>
+    <div class="vignette1">
+      <div class="imageConteiner1">
+        <img src="tshirt2.jpg" alt="vignette1">
+      </div>
+      <div class="textConteiner">
+        <h2>Vente de T-Shirt personnalisé</h2>
+      </div>
+    </div>
+    <div class="vignette1">
+      <div class="imageConteiner1">
+        <img src="tshirt3.jpg" alt="vignette1">
+      </div>
+      <div class="textConteiner">
+        <h2>Vente de T-Shirt personnalisé</h2>
+      </div>
+    </div>
+  </section>
+  <section class="card">
+    <div class="vignette1">
+      <div class="imageConteiner1">
+        <img src="dress1.jpg" alt="vignette1">
+      </div>
+      <div class="textConteiner">
+        <h2>Vente de pantalon personnalisé</h2>
+      </div>
+    </div>
+    <div class="vignette1">
+      <div class="imageConteiner1">
+        <img src="dress2.jpg" alt="vignette1">
+      </div>
+      <div class="textConteiner">
+        <h2>Vente de pantalon personnalisé</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="firstSection">
+    <h1>Pour acheter mes produits il va falloir d'abord vous inscrire !</h1>
+    <a href="singin.html"><p>Cliquez Ici</p></a>
+  </section>
+
+  <footer>
+    <div class="footerTop">
+      <div class="column">
+        <h3>A propos de nous</h3>
+        <ul>
+            <li><a href="#">Date de création: 20/11/24</a></li>
+            <li><a href="#">Equipe: Féru</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Services</h3>
+        <ul>
+            <li><a href="#">Design de vêtements</a></li>
+            <li><a href="#">Development web</a></li>
+            <li><a href="#">Vente de produits personnalisé</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Nous contacter</h3>
+        <ul class="reseaux">
+            <li><a href="contact.html">Section Contact</a></li>
+            <li>
+              <div class="nosReseaux">
+                  <a href="https://www.facebook.com/people/Mamba-Jonathan-Angelin/pfbid02PAeW2RJgNEUUVxoyVmPTu7Mrj2HdSZC7KYzTYkZnoTaEKWM8Wim5YXzgo96RcQfrl/"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.linkedin.com/in/jonathan-mamba-a91b04329/"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+    <div class="bgSpaceLight">
+        <div class="bgSpaceLightContent"></div>
+    </div>
+    <p>Copyright &copy; Féru</p>
+  </footer>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1;}
+    if (n < 1) {slideIndex = slides.length;}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+    } 
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>

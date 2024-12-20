@@ -1,0 +1,121 @@
+footer{
+    width: 99.9%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(9, 9, 145);
+    color: white;
+}
+.footerTop hr{
+    border-color: white;
+    width: 0%;
+    margin: 0 1%;
+}
+footer h1{
+    text-align: center;
+}
+.footerTop{
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.footerTop ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 0;
+}
+.footerTop ul li{
+    display: flex;
+    align-items: center;
+}
+.footerTop ul li div i{
+    margin-right: 2px;
+}
+.footerTop ul li p a{
+    text-decoration: none;
+    color: white;
+}
+.footerEnd{
+    display: flex;
+}
+.conteinerDivFooterEnd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conteinerDivFooterEnd ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.iconTop{
+    margin: 2%;
+}
+.conteinerDivFooterEnd div ul li{
+    margin: 2%;
+}
+.conteinerDivFooterEnd ul li i{
+    padding: 1px;
+    font-size: 200%;
+}
+.footerBottom{
+    margin-top: 1%;
+    text-align: center;
+    border-top: 2px solid white;
+}
+@keyframes slider-1{
+    0%,
+    20%{
+        transform: translateX(0);
+    }
+    25%,
+    45%{
+        transform: translateX(-100%);
+    }
+    50%,
+    70%{
+        transform: translateX(-200%);
+    }
+    75%,
+    95%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-400%);
+    }
+}
+@media (max-width: 900px){
+    .footerTop{
+        flex-direction: column;
+    }
+    .footerTop ul{
+        border-bottom: 1px dashed white;
+    }
+    .footerTop ul li{
+        display: flex;
+        justify-content: center;
+    }
+    .footerEnd{
+        display: flex;
+        justify-content: center;
+    }
+}
+.fa-youtube{
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+}
+.fa-linkedin{
+    color: white;
+    background-color: rgb(45, 216, 216);
+}
+.fa-facebook{
+    color: white;
+    background-color: rgba(17, 14, 204, 0.979);
+    border-radius: 50%;
+}

@@ -1,0 +1,34 @@
+#modifWidhtCenter{
+    width: 100%;
+    text-align: center;
+}
+#modifWidhtCenter:hover{
+    background-color: rgb(43, 43, 230);
+    color: white;
+}
+.jaune{
+    background-color: rgb(219, 179, 0);
+}
+$white: #fefefe;
+
+.bluesky{
+    background-color: rgb(63, 63, 216);
+}
+.blueskyText{
+    color: rgb(63, 63, 216);
+}
+
+/* Demo Styles */
+.docs-example-orbit-slide {
+  padding: 2rem 4rem;
+  color: white;
+
+  .orbit-slide:nth-of-type(1) & {
+    background: rgb(51, 118, 243);
+  }
+
+  .orbit-slide:nth-of-type(2) & {
+    background: white;
+    color: rgb(51, 118, 243);
+  }
+}

@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact{
+    display: flex;
+    width: 100%;
+    background-color: rgba(163, 204, 163, 0.596);
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.bgspace{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.realBgSpace{
+    border: 1px solid white;
+    border-radius: 20px;
+    height: 1vh;
+    background-color: white;
+    width: 50%;
+}
+
+.leftHand{
+    width: 60%;
+    background-color: rgb(4, 4, 136);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom-right-radius: 200px;
+    border-top-left-radius: 200px;
+}
+
+.topLeftHand{
+    text-align: center;
+    font-size: 150%;
+    color: white;
+}
+
+.bottomLeftHand{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 150%;
+    color: white;
+}
+.bottomLeftHand a{
+    color: white;
+}
+.bottomLeftHandTop{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+.bottomLeftHandBottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+}
+p i{
+    padding: 2%;
+    border: 5px solid white;
+    border-radius: 50px;
+    background-color: white;
+    color: blue;
+}
+.rightHand{
+    width: 40%;
+    height: 90vh;
+    padding: 2%;
+}
+.rightHand form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    line-height: 2;
+    justify-content: space-evenly;
+}
+.rightHand form input[type="email"], input[type="text"], input[type="tel"]{
+    width: 90%;
+    padding: 2%;
+    border-radius: 50px;
+    background-color: rgb(245, 242, 242);
+    border: none;
+}
+.rightHand form label{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 120%;
+}
+input[type="submit"]{
+    padding: 2%;
+    border-radius: 50px;
+    background-color: rgb(209, 200, 200);
+    display: inline;
+    border: none;
+}
+textarea{
+    width: 90%;
+    border-radius: 10px;
+    background-color: rgb(245, 242, 242);
+    border: none;
+}
+@media (max-width: 900px) {
+    .contact{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .rightHand{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .leftHand{
+        width: 100%;
+        border-radius: 0;
+        /* margin: 0 auto; */
+    }
+}

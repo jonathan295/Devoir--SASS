@@ -1,0 +1,53 @@
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+}
+.column ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footerTop{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer p{
+    text-align: center;
+    padding: 0.5%;
+}
+.reseaux{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nosReseaux{
+    display: flex;
+    flex-direction: column;
+}
+
+.bgSpaceLight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 1%; */
+}
+.bgSpaceLightContent{
+    background-color: white;
+    height: 1px;
+    width: 70%;
+    align-items: center;
+}

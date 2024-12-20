@@ -1,0 +1,136 @@
+body{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(114, 17, 17, 0.192);
+}
+.conteiner{
+    display: flex;
+}
+body header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+body .leftHand{
+    width: 50%;
+    padding: 10px;
+}
+h2{
+    color: rgb(114, 17, 17);
+}
+/* coté gauche */
+header .imgPdp{
+    width: 40%;
+    border-bottom: 1px solid rgb(114, 17, 17);
+    border-radius: 250px;
+}
+.imgPdp img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.informations ul{
+    list-style: none;
+    padding-left: 3%;
+}
+.informations ul li{
+    display: flex;
+    align-items: center;
+}
+.informations ul li i{
+    padding: 10px;
+}
+.description p{
+    width: 100%;
+    text-align: justify;
+}
+.hobbies ul li{
+    line-height: 2;
+}
+.langue ul li{
+    line-height: 0;
+    list-style-type: disc;
+}
+.langue ul li .progress{
+    width: 50%;
+    height: 5px;
+    border: 1px solid rgb(114, 17, 17);
+    border-radius: 30px;
+}
+.progress .progressF{
+    width: 90%;
+    height: 5px;
+    background-color: rgb(114, 17, 17);
+}
+.progress .progressA{
+    width: 60%;
+    height: 5px;
+    background-color: rgb(114, 17, 17);
+}
+.progress .progressM{
+    width: 90%;
+    height: 5px;
+    background-color: rgb(114, 17, 17);
+}
+/* coté droite */
+body .rightHand{
+    width: 50%;
+    padding: 10px;
+    border-left: 2px solid rgb(114, 17, 17);
+}
+.name{
+    color: rgb(114, 17, 17);
+    margin-top: 5%;
+}
+.exp ul{
+    list-style-type: none;
+}
+.exp ul li div p span{
+    text-decoration: underline;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    body{
+        width: 90%;
+    }
+    header{
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+    }
+    .imgPdp{
+        width: 50%;
+    }
+    .imgPdp img{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .leftHand{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .leftHand ul li{
+        width: 100%;
+    }
+    h2{
+        text-align: center;
+    }
+    .description p{
+        width: 100%;
+    }
+    .rightHand{
+        width: 100%;
+        margin: 0 auto;
+    }
+}

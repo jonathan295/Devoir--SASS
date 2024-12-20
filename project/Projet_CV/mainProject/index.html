@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="conteneur1">
+            <nav id="barre_haut">
+                <ul>
+                    <li>Acceuil</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                    <li>CV</li>
+                </ul>
+            </nav>
+            <form action="">
+                <!-- input:search -->
+                <input type="search" name="recherche" id="rechercher">
+                <input type="button" value="Rechercher" id="boutton">
+                <br><br>
+            </form>
+        </div>
+        <div id="conteneur2">
+            <h1>Curriculum Vitae</h1>
+            <div>
+                <img src="img/logo.png" alt="">
+            </div>
+        </div>
+    </header>
+    <br>
+    <section>
+        <form action="" method="get">
+            <div id="form_conteneur1">
+                <!-- input:text ==> champs textuelle-->
+                <div>
+                    <label for="nom">Nom : </label>
+                    <input type="text" name="nom" id="nom" placeholder="Entrer votre nom..." required>
+                </div>
+                <div>
+                    <label for="prenom">Prénom(s) : </label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Entrer votre prénom..." required>
+                </div>
+                <div>
+                    <label for="email">Email : </label>
+                    <input type="email" name="email" id="email" placeholder="Entrer votre email..">
+                </div>
+                <div>
+                    <label for="tel">Contact : </label>
+                    <input type="tel" name="tel" id="tel" placeholder="Entrer votre numéro de téléphone">
+                </div>
+            </div>
+            <div id="form_conteneur2">
+                <!-- input:range -->
+                <label for="age">Quel âge avez vous ?</label>
+                <input type="range" name="age" id="age" min="0" max="10" value="50">
+             <br><br>
+            </div>
+            <!-- input:date ==> pour un calendrier -->
+            <fieldset>
+                <legend>Calendrier</legend>
+                <label for="date">Votre date de naissance</label>
+                <input type="date" name="birthday" id="date">
+                <br><br>
+                <!-- input:datetime-local ==> calendrier avec heure -->
+                <label for="date-h">Date et heure de création du CV</label>
+                <input type="datetime-local" name="date-h" id="hate-h">
+            </fieldset>
+            <!-- input:checkbox ==> choix multiple-->
+            <p>Choisissez votre/vos hobbie(s) préférée:</p>
+            <input type="checkbox" name="hobbies" id="basket-ball" value="basket-ball">
+            <label for="basket-ball">Basket-ball</label>
+            <input type="checkbox" name="hobbies" id="tennis" value="Tennis">
+            <label for="tennis">Tennis</label>
+            <input type="checkbox" name="hobbies" id="rap" value="rap">
+            <label for="rap">Rap</label>
+            <input type="checkbox" name="hobbies" id="dessin" value="dessin">
+            <label for="dessin">Dessin</label>
+            <!-- input:radio ==> un seul choix-->
+            <p>Choisissez votre sexe:</p>
+            <input type="radio" name="genre" id="homme" value="homme">
+            <label for="homme">Homme</label>
+            <input type="radio" name="genre" id="femme" value="femme">
+            <label for="femme">Femme</label>
+            <input type="radio" name="genre" id="autre" value="autre">
+            <label for="autre">Autre</label>
+            <br><br>
+            <!-- input:number ==> champs de texte où tu peux mettre que des nombres(jsp trop cmt expliquer mais guette et tu verras) -->
+            <label for="body_count">A combien s'élève votre body count ?</label>
+            <input type="number" name="body_count" id="body_count">
+            <br><br>
+            <!-- input:select ==> un seul choix sur une barre de défillement-->
+            <label for="parcour_choice">Le parcours que vous compter choisir en L2</label>
+            <select name="parcour" id="parcour_choice">
+                <option value=""> </option>
+                <option value="reseau">Réseau</option>
+                <option value="ia">Intélligence Artifficielle</option>
+                <option value="genie_logiciel">Génie Logiciel</option>
+            </select>
+            <br><br>
+            <div id="form_conteneur3">
+                <label for="description" id="titre_description">Parlez nous de vous</label><br>
+                <textarea name="description" id="description" rows="10" cols="38">Entrer votre description ici...</textarea>
+            </div>
+            <div id="form_conteneur4">
+                <input type="submit" value="Envoyer">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p>Je déclare de la véracité de ces écrits</p>
+    </footer>
+</body>
+</html>

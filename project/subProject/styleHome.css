@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    height: 80vh;
+    max-height: 80vh;
+  }
+  .mySlides img{
+    height: 80vh;
+    max-height: 80vh;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  .row{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+    height: 20vh;
+    max-height: 20vh;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .bgSpace{
+    background-color: rgba(143, 43, 4, 0.849);
+    height: 10vh;
+    max-height: 10vh;
+    border: 2px solid rgb(143, 44, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bgSpace p{
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    margin: 0;
+  }
+
+  .firstSection h1, .firstSection p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 150%;
+  }
+
+  .firstSection a{
+    display: inline;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 1%;
+  }
+
+  .firstSection a p:hover{
+    transform: scale(1.2);
+  }
+
+  .firstSection a p{
+    margin: 0;
+    border: 1px solid blue;
+    color: white;
+    padding: 1%;
+    background-color: blue;
+    border-radius: 20px;
+  }
+
+  .firstSection h1{
+    font-size: 200%;
+  }
+
+  .card{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+  }
+
+  .vignette{
+    border: 1px solid black; 
+    border-radius: 30px;
+    width: 25%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .vignette:hover{
+    border: 2px solid green; 
+    transform: scale(1.05);
+  }
+
+  .imageConteiner{
+    width: 100%;
+    height: 40%;
+    padding: 1%;
+  }
+
+  .imageConteiner img{
+    object-fit: contain;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+  }
+  .imageConteiner img:hover{
+    transform: scale(1.005);
+  }
+
+  .textConteiner{
+    height: 60%;
+  }
+  .textConteiner h2{
+    font-size: 150%;
+  }
+  .textConteiner p{
+    font-size: 150%;
+  }
+
+  .vignette1{
+    border: 1px solid black; 
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 25%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .vignette1:hover{
+    border: 2px solid green; 
+    transform: scale(1.05);
+  }
+
+  .imageConteiner1{
+    width: 40%;
+    height: 100%;
+    padding: 1%;
+  }
+
+  .imageConteiner1 img{
+    object-fit: contain;
+    border-bottom-left-radius: 30px;
+    width: 100%;
+    height: 100%;
+  }
+  /* .imageConteiner img:hover{
+    transform: scale(1.15);
+  } */
+
+  /* .textConteiner{
+    height: 60%;
+  } */
+  .textConteiner h2{
+    font-size: 150%;
+  }
+  .textConteiner p{
+    font-size: 150%;
+  }
+
+  @media (max-width: 900px) {
+    .card{
+      flex-direction: column;
+    }
+
+    .vignette, .vignette1{
+      width: 50%;
+      margin: 1% auto;
+    }
+  }

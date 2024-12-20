@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleContact.css">
+    <link rel="stylesheet" href="Font-Awesome-6.x/Font-Awesome-6.x/css/all.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footerStyle.css">
+    <title>Contact - ...</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <span class="logo">Féru-Advice</span>
+            </div>
+            <ul class="navLinks">
+                <li><a href="home.html">Acceuil</a></li>
+                <li><a href="#">Sercice</a></li>
+                <li><a href="contact.html" id="is-active">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <form action="">
+                <input type="search" name="recherche" id="recherche" placeholder="Search...">
+                <label for="recherche"><i class="fa fa-search"></i></label>
+            </form>
+        </nav>
+        <div class="btnMenu">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <!-- <section class="vignette">
+            <div class="conteiner">
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <h1>Exemple</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis reiciendis sit placeat provident.</p>
+                </div>
+            </div>
+        </section> -->
+    </header>
+
+    <div class="contact">
+        <div class="leftHand">
+            <div class="topLeftHand">
+                <h1>Contectez-nous</h1>
+                <h2>En quoi pouvons nous vous aider ?</h2>
+            </div>
+            <div class="bgspace">
+                <div class="realBgSpace"></div>
+            </div>
+            <div class="bottomLeftHand">
+                <div class="bottomLeftHandTop">
+                    <div class="bottomLeftHandTopLeft">
+                        <p><i class="fa fa-phone-alt"></i></p>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+261 38 90 561 15</p>
+                        </div>
+                    </div>
+                    <div class="bottomLeftHandTopRight">
+                        <p><i class="fa fa-envelope"></i></p>
+                        <div>
+                            <h4>E-mail</h4>
+                            <a href="#">jon...3@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomLeftHandBottom">
+                    <div class="bottomLeftHandBottomLeft">
+                        <p><i class="fa fa-globe"></i></p>
+                        <div>
+                            <h4>Site Web</h4>
+                            <a href="https://notresiteweb.com">notresiteweb.com</a>
+                        </div>
+                    </div>
+                    <div class="bottomLeftHandBottomRight">
+                        <p><i class="fa fa-location-dot"></i></p>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Ambanidia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightHand">
+            <form action="">
+                <label for="name">Nom & Prénom(s):</label>
+                <input type="text" name="name" id="name">
+                <label for="mail">E-mail:</label>
+                <input type="email" name="mail" id="mail">
+                <label for="tel">Numéro de téléphone:</label>
+                <input type="tel" name="" id="">
+                <label for="message">Votre message:</label>
+                <textarea name="messageclient" id="message" cols="30" rows="5"></textarea>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerTop">
+          <div class="column">
+            <h3>A propos de nous</h3>
+            <ul>
+                <li><a href="#">Date de création: 20/11/24</a></li>
+                <li><a href="#">Equipe: Féru</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Design de vêtements</a></li>
+                <li><a href="#">Development web</a></li>
+                <li><a href="#">Vente de produits personnalisé</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Nous contacter</h3>
+            <ul class="reseaux">
+                <li><a href="contact.html">Section Contact</a></li>
+                <li>
+                  <div class="nosReseaux">
+                      <a href="https://www.facebook.com/people/Mamba-Jonathan-Angelin/pfbid02PAeW2RJgNEUUVxoyVmPTu7Mrj2HdSZC7KYzTYkZnoTaEKWM8Wim5YXzgo96RcQfrl/"><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.linkedin.com/in/jonathan-mamba-a91b04329/"><i class="fab fa-linkedin"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                  </div>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bgSpaceLight">
+            <div class="bgSpaceLightContent"></div>
+        </div>
+        <p>Copyright &copy; Féru</p>
+    </footer>
+
+    <script>
+        const btnMenu = document.querySelector(".btnMenu");
+        const navLinks = document.querySelector(".navLinks");
+        const barsX = document.querySelector(".fa-bars");
+
+        const desconnectBtn = document.querySelector(".desconnectBtn");
+        const desconnectList =document.querySelector(".desconnectList");
+
+        btnMenu.addEventListener("click", () => {
+            btnMenu.classList.toggle("open");
+            barsX.classList.toggle("fa-bars");
+            barsX.classList.toggle("fa-times");
+            navLinks.classList.toggle("showDesconnectList");
+        })
+
+        desconnectBtn.addEventListener("click", () => {
+            desconnectList.classList.toggle("showDesconnectListUl");
+        })
+    </script>
+</body>
+</html>
