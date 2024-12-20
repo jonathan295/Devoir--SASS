@@ -1,0 +1,17 @@
+.barreExtern{
+    border: 2px solid rgb(141, 31, 141);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    width: 90%;
+    height: 10px;
+    margin: 0 auto;
+
+    .barreIntern1{
+        background-color: rgb(158, 35, 158);
+        width: 90%;
+        height: 10px;
+    }
+}

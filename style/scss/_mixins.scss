@@ -1,0 +1,13 @@
+@mixin responsive-to($breakpoint) {
+    @if $breakpoint == medium {
+        @media (max-width: 900px) {
+            @content;
+        }
+    }
+}
+
+@mixin flex($d, $jc, $ai)  {
+    display: $d;
+    justify-content: $jc;
+    align-items: $ai;
+}

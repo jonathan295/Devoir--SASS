@@ -1,0 +1,27 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.menu-tools{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.342);
+    backdrop-filter: blur(10px);
+}
+
+.menu-hand-close{
+    display: none;
+}
+
+.link{
+    width: 100%;
+}

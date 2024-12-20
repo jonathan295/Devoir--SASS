@@ -1,0 +1,13 @@
+.localisation{
+    width: 40%;
+
+    @include responsive-to(medium) {
+        width: 100%;
+    }
+}
+
+iframe{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}

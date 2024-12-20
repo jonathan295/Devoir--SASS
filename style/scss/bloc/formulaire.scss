@@ -1,0 +1,29 @@
+.formulaire{
+    width: inherit;
+    @include responsive-to(medium){
+        width: 100%;
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+
+    input, textarea{
+        width: 80%;
+        margin: 0 auto;
+        border-color: white;
+        background-color: rgba(0, 0, 0, 0.384);
+        backdrop-filter: blur(10px);
+        font-size: 200%;
+        border-radius: 50px;
+    }
+}
+
+// @media (max-width: 900px) {
+//     .formulaire{
+//         width: 100%;
+//     }
+// }

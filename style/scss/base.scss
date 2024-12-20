@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    position: relative;
+    background-image: url("../../image/bg_Home.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+.is_active{
+    background-color: blue;
+}
+
+footer{
+    padding: 1%;
+    border-top: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.158);
+    backdrop-filter: blur(10px);
+
+    p{
+        color: white;
+        font-weight: bolder;
+    }
+}

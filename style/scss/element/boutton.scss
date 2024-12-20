@@ -1,0 +1,56 @@
+.btn{
+    background-color: $color-btn;
+    padding: 2%;
+    margin: 1%;
+
+    &:hover{
+        transform: scale(1.2);
+        background-color: darken($color-btn, 80%);
+        box-shadow: 0px 0px 10px blue;
+        text-shadow: 0 0 5px blue;
+    }
+
+    a{
+        font-size: 150%;
+    }
+}
+
+.card{
+    .btn{
+        width: fit-content;
+        margin: 2% auto;
+        padding: 2%;
+    }
+}
+
+.send{
+    margin: 1% auto;
+    width: fit-content;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.507);
+    backdrop-filter: blur(10px);
+    color: black;
+    font-size: 120%;
+
+    &:hover{
+        transform: scale(1.1);
+        background-color: rgba(255, 255, 255, 0.719);
+        box-shadow: 0px 0px 10px blue;
+    }
+}
+
+@include responsive-to(medium) {
+    .with-border{
+        border-style: double;
+        border-width: 3px;
+    }
+}
+
+// @media (max-width: 900px) {
+//     .card{
+//         h2, p, .btn{
+//             font-size: 100%;
+//         }
+//     }
+// }
